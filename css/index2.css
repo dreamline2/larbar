@@ -1,0 +1,302 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*長寬*/
+/*藏字*/
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif, "微軟正黑體", "新細明體", "標楷體";
+  font-size: 13pt;
+  line-height: 13pt;
+  background: url(../img/BG.jpg) no-repeat top center;
+}
+
+#all {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIxMi41JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjEyLjUlIiBzdG9wLWNvbG9yPSIjNjY2NmZmIiBzdG9wLW9wYWNpdHk9IjAuMjUiLz48c3RvcCBvZmZzZXQ9Ijg3LjUlIiBzdG9wLWNvbG9yPSIjYjNiM2ZmIiBzdG9wLW9wYWNpdHk9IjAuMjUiLz48c3RvcCBvZmZzZXQ9Ijg3LjUlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(12.5%, rgba(0, 0, 0, 0)), color-stop(12.5%, rgba(102, 102, 255, 0.25)), color-stop(87.5%, rgba(179, 179, 255, 0.25)), color-stop(87.5%, rgba(0, 0, 0, 0))), -webkit-gradient(linear, 50% 0%, 50% 1, color-stop(100%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 12.5%, rgba(102, 102, 255, 0.25) 12.5%, rgba(179, 179, 255, 0.25) 87.5%, rgba(0, 0, 0, 0) 87.5%), -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 12.5%, rgba(102, 102, 255, 0.25) 12.5%, rgba(179, 179, 255, 0.25) 87.5%, rgba(0, 0, 0, 0) 87.5%), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 12.5%, rgba(102, 102, 255, 0.25) 12.5%, rgba(179, 179, 255, 0.25) 87.5%, rgba(0, 0, 0, 0) 87.5%), linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
+  background-size: 8.3333333333%, 100% 24px;
+  background-origin: content-box;
+  background-clip: content-box;
+  background-position: left top;
+  position: relative;
+}
+#all:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+#money {
+  width: 219px;
+  height: 138px;
+  background: url(../img/money.png) no-repeat top left;
+  position: absolute;
+  right: 50px;
+  margin-top: 720px;
+  z-index: 30;
+}
+
+#money_bag {
+  width: 258px;
+  height: 207px;
+  background: url(../img/money_bag.png) no-repeat top left;
+  position: absolute;
+  margin-top: 650px;
+  margin-left: 30px;
+  z-index: 30;
+}
+
+#kumar {
+  position: absolute;
+  margin-top: -78px;
+  margin-left: -44.5px;
+  z-index: 50;
+}
+
+#bug {
+  position: absolute;
+  right: 70px;
+  z-index: 50;
+  top: 15px;
+}
+
+#button {
+  width: 95px;
+  height: 95px;
+  background: url(../img/button.png) no-repeat 0 -95px;
+  position: relative;
+  float: right;
+  margin-top: 580px;
+  margin-right: 150px;
+}
+#button:hover {
+  background-position: 0 0;
+}
+
+#click_bar {
+  width: 250px;
+  height: 350px;
+  background: url(../img/bar1.png) no-repeat top left;
+  position: relative;
+  float: right;
+  margin-top: 250px;
+  margin-right: -170px;
+}
+#click_bar:active {
+  background: url(../img/bar2.png);
+}
+
+.light {
+  position: absolute;
+  margin-top: 90px;
+  margin-left: 90px;
+}
+
+#light_move {
+  margin-left: 800px;
+}
+
+.light1 {
+  white-space: nowrap;
+  text-indent: 200%;
+  overflow: hidden;
+  font: 0/0 serif/9;
+  text-shadow: none/9;
+  color: transparent/9;
+  position: relative;
+  width: 80px;
+  height: 70px;
+  background: url(../img/light1.png) no-repeat top left;
+  -webkit-animation: color2 0.5s infinite linear;
+  -moz-animation: color2 0.5s infinite linear;
+  -o-animation: color2 0.5s infinite linear;
+  animation: color2 0.5s infinite linear;
+}
+
+.light2 {
+  white-space: nowrap;
+  text-indent: 200%;
+  overflow: hidden;
+  font: 0/0 serif/9;
+  text-shadow: none/9;
+  color: transparent/9;
+  width: 80px;
+  height: 70px;
+  background: url(../img/light2.png) no-repeat top left;
+  -webkit-animation: color 0.5s infinite linear;
+  -moz-animation: color 0.5s infinite linear;
+  -o-animation: color 0.5s infinite linear;
+  animation: color 0.5s infinite linear;
+}
+
+@-moz-keyframes color2 {
+  0% {
+    background: url(../img/light1.png) no-repeat 0px 0px;
+  }
+  50% {
+    background: url(../img/light1_1.png);
+  }
+  100% {
+    background: url(../img/light1.png) no-repeat 0px 0px;
+  }
+}
+@-webkit-keyframes color2 {
+  0% {
+    background: url(../img/light1.png) no-repeat 0px 0px;
+  }
+  50% {
+    background: url(../img/light1_1.png);
+  }
+  100% {
+    background: url(../img/light1.png) no-repeat 0px 0px;
+  }
+}
+@keyframes color2 {
+  0% {
+    background: url(../img/light1.png) no-repeat 0px 0px;
+  }
+  50% {
+    background: url(../img/light1_1.png);
+  }
+  100% {
+    background: url(../img/light1.png) no-repeat 0px 0px;
+  }
+}
+@-moz-keyframes color {
+  0% {
+    background: url(../img/light2_1.png) no-repeat 0px 0px;
+  }
+  50% {
+    background: url(../img/light2.png);
+  }
+  100% {
+    background: url(../img/light2_1.png) no-repeat 0px 0px;
+  }
+}
+@-webkit-keyframes color {
+  0% {
+    background: url(../img/light2_1.png) no-repeat 0px 0px;
+  }
+  50% {
+    background: url(../img/light2.png);
+  }
+  100% {
+    background: url(../img/light2_1.png) no-repeat 0px 0px;
+  }
+}
+@keyframes color {
+  0% {
+    background: url(../img/light2_1.png) no-repeat 0px 0px;
+  }
+  50% {
+    background: url(../img/light2.png);
+  }
+  100% {
+    background: url(../img/light2_1.png) no-repeat 0px 0px;
+  }
+}
+.row {
+  width: 497px;
+  height: 417px;
+  background: url(../img/solt_machine.png) no-repeat top left;
+  position: relative;
+  top: 308px;
+  left: 190px;
+}
+.row .slotMachine {
+  width: 152px;
+  height: 135px;
+  display: inline-block;
+  margin-left: 15px;
+  overflow: hidden;
+}
+.row .slotMachine .slot {
+  width: 152px;
+  height: 135px;
+}
+.row .slotMachine .slot1 {
+  background: url(../img/slot1.png);
+}
+.row .slotMachine .slot2 {
+  background: url(../img/slot2.png);
+}
+.row .slotMachine .slot3 {
+  background: url(../img/slot3.png);
+}
+.row .slotMachine .slot4 {
+  background: url(../img/slot4.png);
+}
+.row .slotMachine .slot5 {
+  background: url(../img/slot5.png);
+}
+.row #machine2, .row #machine3, .row #machine5, .row #machine6, .row #machine8, .row #machine9 {
+  margin-left: 2px;
+}
+
+/*# sourceMappingURL=index2.css.map */
